@@ -1,22 +1,3 @@
-#!/bin/bash
-
-################################################################################
-# Script for installing Odoo on Ubuntu 22.04 LTS (could be used for other version too)
-# Author: Henry Robert Muwanika
-#-------------------------------------------------------------------------------
-# This script will install Odoo on your Ubuntu 22.04 server. It can install multiple Odoo instances
-# in one Ubuntu because of the different xmlrpc_ports
-#-------------------------------------------------------------------------------
-# crontab -e
-# 43 6 * * * certbot renew --post-hook "systemctl reload nginx"
-# Make a new file:
-# sudo nano install_odoo_ubuntu.sh
-# Place this content in it and then make the file executable:
-# sudo chmod +x install_odoo_ubuntu.sh
-# Execute the script to install Odoo:
-# ./install_odoo_ubuntu.sh
-################################################################################
-
 OE_USER="odoo"
 OE_HOME="/opt/$OE_USER"
 OE_HOME_EXT="/opt/$OE_USER/${OE_USER}-server"
